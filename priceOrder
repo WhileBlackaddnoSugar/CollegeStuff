@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class EX9 {
+	static float valPag(int a, int b, int c, int d, int e) {
+		a = a * b;
+		c = c * d;
+		return ((a + c)*((e/100)+1));
+	}
+	public static void main(String[] args) {
+		int ipI, valPe1, quanPe1, valPe2, quanPe2;
+		String codPe1, codPe2;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Informe a porcentagem de IPI:");
+		ipI = scan.nextInt();
+		System.out.println("Informe o codigo da peça 1: ");
+		codPe1 = scan.next();
+		System.out.println("Informe o valor da peça 1: ");
+		valPe1 = scan.nextInt();
+		System.out.println("Informe a quantidade da peça 1: ");
+		quanPe1 = scan.nextInt();
+		System.out.println("Informe o codigo da peça 2: ");
+		codPe2 = scan.next();
+		System.out.println("Informe o valor da peça 2: ");
+		valPe2 = scan.nextInt();
+		System.out.println("Informe a quantidade da peça 2: ");
+		quanPe2 = scan.nextInt();
+		scan.close();
+		System.out.println("O valor a ser pago é: "+ valPag(valPe1, quanPe1, valPe2, quanPe2, ipI));
+		
+	}
+}
