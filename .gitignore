@@ -1,0 +1,19 @@
+public class EX1 {
+	static float mediaPeso(int x, int y, int z) {
+		return ((x*2)+(y*3)+(z*5))/10;
+		
+	}
+	public static void main(String[] args) {
+		Scanner scanInt = new Scanner(System.in);
+		int n1,n2,n3;
+		System.out.println("Informe o valor da primeira nota:");
+		n1 = scanInt.nextInt();
+		System.out.println("Informe o valor da segunda nota:");
+		n2 = scanInt.nextInt();
+		System.out.println("Informe o valor da terceira nota:");
+		n3 = scanInt.nextInt();
+		scanInt.close();
+		System.out.println("A média da nota é:" + mediaPeso(n1, n2, n3));
+	}
+
+}
