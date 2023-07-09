@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class EX3 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String nomePilot;
+		Float kiloMetro;
+		int h;
+		System.out.println("Informe o nome do piloto:");
+		nomePilot = scan.next();
+		System.out.println("Informe quantos kilometros " + nomePilot + " percorreu:");
+		kiloMetro = scan.nextFloat();
+		System.out.println("Informe quantas horas " + nomePilot + " levou para percorrer o percurso:");
+		h = scan.nextInt();
+		scan.close();
+		System.out.println("A velocidade média de " + nomePilot + " foi " + (kiloMetro/h) + " km/h");
+		
+	}
+	
+}
