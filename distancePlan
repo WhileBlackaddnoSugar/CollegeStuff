@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class EX7 {
+	static double distPlan(int a, int b, int c, int d, float x) {
+		x = ((c-a)*(c-a))+((d-b)*(d-b));
+		return Math.sqrt(x);
+	}
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int x1, x2, y1, y2;
+		System.out.println("Informe as posições do primeiro ponto no plano");
+		System.out.println("X1: ");
+		x1 = scan.nextInt();
+		System.out.println("Y1: ");
+		y1 = scan.nextInt();
+		System.out.println("Informe as posições do segundo ponto no plano");
+		System.out.println("X2: ");
+		x2 = scan.nextInt();
+		System.out.println("Y2: ");
+		y2 = scan.nextInt();
+		scan.close();
+		float x = 0;
+		System.out.println("A distancia entre os dois pontos no plano é de: " + distPlan(x1,y1,x2,y2,x));
+	}
+}
