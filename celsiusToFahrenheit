@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class EX5 {
+	static float tempFah(float a) {
+		return ((a*1.8f)+32);
+	}
+	public static void main(String[] args){
+		float C;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Informe o valor em graus celsius: ");
+		C = scan.nextFloat();
+		scan.close();
+		System.out.println("A temperatura em Fahrenheit é: " + tempFah(C));
+		
+	}
+}
