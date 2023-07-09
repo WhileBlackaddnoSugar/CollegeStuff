@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Exer3 {
+	public static void main(String[] args) {
+		int a, b, c;
+		Scanner read = new Scanner (System.in);
+		System.out.println("Informe um inteiro:");
+		a = read.nextInt();
+		System.out.println("Informe outro inteiro:");
+		b = read.nextInt();
+		System.out.println("Digite 1 para somar os inteiros");
+		System.out.println("Digite 2 para subtrair os inteiros");
+		System.out.println("Digite 3 para multiplicar os inteiros");
+		System.out.println("Digite 4 para dividir os inteiros:");
+		c = read.nextInt();
+		read.close();
+		switch (c) {
+		case 1:
+			System.out.println("O resultado é: "+ (a+b) );
+			break;
+		case 2:
+			System.out.println("O resultado é: "+ (a-b) );
+			break;
+		case 3:
+			System.out.println("O resultado é: "+ (a*b) );
+			break;
+		case 4:
+			System.out.println("O resultado é: "+ (a/b) );
+			break;
+		default:
+			System.out.println("ERRO: OPÇÃO INVALIDA");
+		}
+	}
+}
