@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class EX4 {
+	static float totalPagar(int a, int b, int c) {
+		return (((b*1.8f)+(c*3.5f)+25)*1.1f)/a;
+	}
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int numP, numChop, numCob;
+		System.out.println("Informe quantas pessoas há no grupo:");
+		numP = scan.nextInt();
+		System.out.println("Informe quantos chops foram pedidos:");
+		numChop = scan.nextInt();
+		System.out.println("Informe quantas coberturas foram pedidas:");
+		numCob = scan.nextInt();
+		scan.close();
+		System.out.println("O total a pagar é: " + totalPagar(numP, numChop, numCob));
+		
+	}
+}
