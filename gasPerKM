@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class EX2 {
+	static float kmPorLitro(float a, float b, float c) {
+		return (b - a)/c;
+	}
+	public static void main(String[] args) {
+	Scanner scanFloat = new Scanner(System.in);
+	float kmIni, kmFin, gasUsed;
+	System.out.println("Informe a kilometragem inicial:");
+	kmIni = scanFloat.nextFloat();
+	System.out.println("Informe a kilometragem final:");
+	kmFin = scanFloat.nextFloat();
+	System.out.println("Informe a quantidade de gasolina usada:");
+	gasUsed = scanFloat.nextFloat();
+	scanFloat.close();
+	System.out.println("Você percorreu:" + kmPorLitro(kmIni, kmFin, gasUsed) + " kilometros por litro de gasolina");
+	}
+}
